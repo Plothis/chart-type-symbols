@@ -1,11 +1,17 @@
 {
-  "$schema": "https://raw.githubusercontent.com/BohemianCoding/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
-  "icon": "icon.png",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
   "commands": [
     {
       "name": "my-command",
       "identifier": "chart-type-symbols.my-command-identifier",
-      "script": "./my-command.js"
+      "script": "./my-command.js",
+      "handlers": {
+        "run": "onRun",
+        "actions": {
+          "Shutdown": "onShutdown"
+        }
+      }
     }
   ],
   "menu": {
