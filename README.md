@@ -1,2 +1,2 @@
 # chart-type-symbols
-Sketch symbols library for Gradict chart types.
+A Sketch plugin: Sketch symbols library for Gradict chart types.
